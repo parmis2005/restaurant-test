@@ -29,7 +29,9 @@ export default function Hero() {
           className="animate-fade-in mt-6 max-w-xl text-lg text-cream/80"
           style={{ animationDelay: "0.3s" }}
         >
-          {restaurant.claim}. Saisonale Küche, die Geschichten erzählt.
+          {restaurant.claim}.
+          <br />
+          Saisonale Küche, die Geschichten erzählt.
         </p>
 
         <div
