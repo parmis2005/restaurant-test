@@ -37,7 +37,7 @@ export default function Header() {
           : "bg-gradient-to-b from-black/60 to-transparent py-6"
       }`}
     >
-      <div className="flex w-full items-center justify-between px-6 lg:px-8">
+      <div className="relative flex w-full items-center justify-between px-6 min-[1400px]:px-8">
         <a
           href="#top"
           className="font-serif text-xl tracking-[0.15em] text-cream sm:text-2xl"
@@ -46,7 +46,7 @@ export default function Header() {
           MAISON <span className="text-gold">LUMIÈRE</span>
         </a>
 
-        <nav className="hidden items-center gap-9 lg:flex">
+        <nav className="hidden items-center gap-9 min-[1400px]:absolute min-[1400px]:left-1/2 min-[1400px]:flex min-[1400px]:-translate-x-1/2">
           {links.map((link) => (
             <a
               key={link.href}
@@ -58,7 +58,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-5 lg:flex">
+        <div className="hidden items-center gap-5 min-[1400px]:flex">
           <a
             href={`tel:${restaurant.phoneHref}`}
             className="text-sm tracking-wide text-cream/80 transition-colors hover:text-gold"
@@ -75,7 +75,7 @@ export default function Header() {
 
         <button
           aria-label="Menü öffnen"
-          className="flex flex-col gap-1.5 lg:hidden"
+          className="flex flex-col gap-1.5 min-[1400px]:hidden"
           onClick={() => setOpen((v) => !v)}
         >
           <span
@@ -97,7 +97,7 @@ export default function Header() {
       </div>
 
       <div
-        className={`fixed inset-x-0 top-0 -z-10 h-dvh bg-background transition-opacity duration-300 lg:hidden ${
+        className={`fixed inset-x-0 top-0 -z-10 h-dvh bg-background transition-opacity duration-300 min-[1400px]:hidden ${
           open ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
