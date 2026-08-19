@@ -30,8 +30,7 @@ export default function Hero() {
           style={{ animationDelay: "0.3s" }}
         >
           {restaurant.claim}.
-          <br />
-          Saisonale Küche, die Geschichten erzählt.
+          <br className="hidden sm:block" /> Saisonale Küche mit Geschichte.
         </p>
 
         <div
