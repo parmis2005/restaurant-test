@@ -37,7 +37,7 @@ export default function Header() {
           : "bg-gradient-to-b from-black/60 to-transparent py-6"
       }`}
     >
-      <div className="flex w-full items-center justify-between px-6 lg:px-10">
+      <div className="flex w-full items-center justify-between px-6 lg:px-8">
         <a
           href="#top"
           className="font-serif text-xl tracking-[0.15em] text-cream sm:text-2xl"
